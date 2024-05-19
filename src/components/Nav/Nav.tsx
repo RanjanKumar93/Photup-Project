@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import Container from "@/components/Container";
 import UploadButton from "@/components/UploadButton";
-// import Image from "next/image";
-// import logo from "../../../public/logo.png";
 import SidebarLinks from "../SidebarLinks";
 import { Image, Sparkles } from "lucide-react";
 

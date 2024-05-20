@@ -27,12 +27,12 @@ export function useResources(options?: useResources) {
         return [...results, ...old];
       }
     );
-    // queryClient.invalidateQueries({
-    //   queryKey: [
-    //     "resources",
-    //     String(process.env.NEXT_PUBLIC_CLOUDINARY_LIBRARY_TAG),
-    //   ],
-    // });
+    queryClient.invalidateQueries({
+      queryKey: [
+        "resources",
+        String(process.env.NEXT_PUBLIC_CLOUDINARY_LIBRARY_TAG),
+      ],
+    });
   }
 
   return {
